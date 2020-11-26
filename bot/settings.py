@@ -1,5 +1,4 @@
 import os
-import pytz
 from secrets import token_urlsafe
 
 
@@ -19,7 +18,3 @@ WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 # webserver settings
 WEBAPP_HOST = '0.0.0.0'
 WEBAPP_PORT = int(os.getenv('PORT'))
-
-# timezone
-TIMEZONE = os.getenv('TIMEZONE', 'UTC')
-assert TIMEZONE in pytz.all_timezones
