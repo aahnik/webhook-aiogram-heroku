@@ -8,9 +8,6 @@ from bot.settings import (API_TOKEN,
                           WEBHOOK_URL, WEBHOOK_PATH,
                           WEBAPP_HOST, WEBAPP_PORT)
 
-
-logging.basicConfig(level=logging.INFO)
-
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp.middleware.setup(LoggingMiddleware())
@@ -34,7 +31,7 @@ async def on_shutdown(dp):
     logging.warning('Bye!')
 
 
-if __name__ == '__main__':
+def main():
     start_webhook(
         dispatcher=dp,
         webhook_path=WEBHOOK_PATH,
