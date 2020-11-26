@@ -1,9 +1,7 @@
 import os
 import pytz
-from dotenv import load_dotenv
 from secrets import token_urlsafe
 
-load_dotenv()
 
 API_TOKEN = os.getenv('API_TOKEN')
 assert API_TOKEN
