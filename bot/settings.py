@@ -20,7 +20,7 @@ WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
 # webserver settings
 WEBAPP_HOST = 'localhost'
-WEBAPP_PORT = 8443
+WEBAPP_PORT = int(os.getenv('PORT'))
 
 # timezone
 TIMEZONE = os.getenv('TIMEZONE', 'UTC')
