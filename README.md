@@ -34,17 +34,13 @@ heroku create
 
 </details>
 
-<br>
-
 ```shell
 heroku labs:enable runtime-dyno-metadata
 heroku config:set API_TOKEN=<your token>
 ```
-
 
 4. Push the code to Heroku.
 
 ```shell
 git push heroku main
 ```
-
