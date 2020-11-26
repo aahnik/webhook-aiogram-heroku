@@ -1,11 +1,14 @@
 # webhook-aiogram-heroku
 
+[![Generic badge](https://img.shields.io/badge/works-yes-<COLOR>.svg)](https://aahnik.github.io)
+[![ MIT license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://aahnik.github.io/)
+[![telegram-chat](https://img.shields.io/badge/chat-@aahnikdaw-blue?logo=telegram)](https://telegram.me/aahnikdaw)
+
 A simple telegram echo bot made with [`aiogram`](https://github.com/aiogram/aiogram), that fetches updates using web-hook connection.
 
+## Deploy
 
-## Deploy from CLI
-
-This bot can be easily deployed to [Heroku](https://heroku.com/).
+This bot can be easily deployed to [Heroku](https://heroku.com/) cloud platform.
 
 The following steps assume that you have Heroku CLI installed in your system.
 
