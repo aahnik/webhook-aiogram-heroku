@@ -21,14 +21,10 @@ async def echo(message: types.Message):
 
 async def on_startup(dp):
     logging.warning('Starting webhook')
-    await bot.delete_webhook()
     await bot.set_webhook(WEBHOOK_URL)
-    logging.warning('Webhook set')
 
 
 async def on_shutdown(dp):
-    logging.warning('Shutting down..')
-    await bot.delete_webhook()
     logging.warning('Bye!')
 
 
