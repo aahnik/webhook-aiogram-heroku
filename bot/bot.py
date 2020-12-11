@@ -19,9 +19,15 @@ async def echo(message: types.Message):
     await bot.send_message(message.chat.id, message.text)
 
 
-async def on_startup(dp):
-    logging.warning('Starting webhook')
+async def set_hook():
+    # set webhook
     await bot.set_webhook(WEBHOOK_URL)
+    print(await bot.get_webhook_info())
+
+
+async def on_startup(dp):
+    logging.warning(
+        'Starting connection. Will fail, if webhook not set previously')
 
 
 async def on_shutdown(dp):
