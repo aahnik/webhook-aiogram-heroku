@@ -1,8 +1,10 @@
+ado-py==0.0.7
 aiodns==2.0.0
 aiogram==2.11.2
 aiohttp==3.7.3
 async-timeout==3.0.1
 attrs==20.3.0
+autopep8==1.5.4
 Babel==2.9.0
 cchardet==2.1.7
 certifi==2020.11.8
@@ -10,9 +12,11 @@ cffi==1.14.4
 idna==2.10
 multidict==5.0.2
 pycares==3.1.1
+pycodestyle==2.6.0
 pycparser==2.20
 python-dotenv==0.15.0
 pytz==2020.4
+toml==0.10.2
 typing-extensions==3.7.4.3
 ujson==4.0.1
 uvloop==0.14.0
