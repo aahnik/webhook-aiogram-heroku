@@ -22,6 +22,7 @@ async def echo(message: types.Message):
 async def on_startup(dp):
     logging.warning(
         'Starting connection. Will fail, if webhook not set previously')
+    await bot.set_webhook()
 
 
 async def on_shutdown(dp):
@@ -34,6 +35,7 @@ def main():
         dispatcher=dp,
         webhook_path=WEBHOOK_PATH,
         skip_updates=True,
+        on_startup=on_startup(),
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
