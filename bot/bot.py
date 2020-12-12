@@ -19,16 +19,6 @@ async def echo(message: types.Message):
     await bot.send_message(message.chat.id, message.text)
 
 
-async def set_hook():
-    if not HEROKU_APP_NAME:
-        print('You have forgot to set HEROKU_APP_NAME')
-        quit()
-    # set webhook
-    await bot.set_webhook(WEBHOOK_URL)
-    print(await bot.get_webhook_info())
-    await bot.close()
-
-
 async def on_startup(dp):
     logging.warning(
         'Starting connection. Will fail, if webhook not set previously')
