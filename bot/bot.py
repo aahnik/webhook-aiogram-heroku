@@ -22,6 +22,7 @@ async def echo(message: types.Message):
 async def set_hook():
     if not HEROKU_APP_NAME:
         print('You have forgot to set HEROKU_APP_NAME')
+        quit()
     # set webhook
     await bot.set_webhook(WEBHOOK_URL)
     print(await bot.get_webhook_info())
