@@ -26,6 +26,7 @@ async def set_hook():
     # set webhook
     await bot.set_webhook(WEBHOOK_URL)
     print(await bot.get_webhook_info())
+    await bot.close()
 
 
 async def on_startup(dp):
