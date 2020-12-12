@@ -35,7 +35,7 @@ def main():
         dispatcher=dp,
         webhook_path=WEBHOOK_PATH,
         skip_updates=True,
-        on_startup=on_startup(),
+        on_startup=on_startup,
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
