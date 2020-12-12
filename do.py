@@ -11,13 +11,11 @@ def set_hook():
         if not HEROKU_APP_NAME:
             print('You have forgot to set HEROKU_APP_NAME')
             quit()
-        await bot.delete_webhook()
         await bot.set_webhook(WEBHOOK_URL)
         print(await bot.get_webhook_info())
-        await bot.close()
+        quit()
 
     asyncio.run(set_hook())
-    print('Webhook set')
 
 
 def start():
