@@ -54,9 +54,4 @@ To confirm your bot is working:
 
 - Run `heroku ps` which will show you details of your dyno.
 
-```shell
-=== web (Free): python start.py (1)
-web.1: up
-```
-
 - Send a message to your bot, and your bot will echo it back to you.
