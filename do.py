@@ -13,9 +13,10 @@ def set_hook():
             quit()
         await bot.set_webhook(WEBHOOK_URL)
         print(await bot.get_webhook_info())
-        quit()
+    
 
     asyncio.run(hook_set())
+    bot.close()
 
 
 def start():
