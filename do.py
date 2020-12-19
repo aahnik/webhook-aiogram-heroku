@@ -1,21 +1,21 @@
 ''' Run a function by ado <func_name> '''
 
 
-# def set_hook():
-#     import asyncio
-#     from bot.settings import HEROKU_APP_NAME, WEBHOOK_URL, BOT_TOKEN
-#     from aiogram import Bot
-#     bot = Bot(token=BOT_TOKEN)
+def set_hook():
+    import asyncio
+    from bot.settings import HEROKU_APP_NAME, WEBHOOK_URL, BOT_TOKEN
+    from aiogram import Bot
+    bot = Bot(token=BOT_TOKEN)
 
-#     async def set_hook():
-#         if not HEROKU_APP_NAME:
-#             print('You have forgot to set HEROKU_APP_NAME')
-#             quit()
-#         await bot.set_webhook(WEBHOOK_URL)
-#         print(await bot.get_webhook_info())
-#         quit()
+    async def hook_set():
+        if not HEROKU_APP_NAME:
+            print('You have forgot to set HEROKU_APP_NAME')
+            quit()
+        await bot.set_webhook(WEBHOOK_URL)
+        print(await bot.get_webhook_info())
+        quit()
 
-#     asyncio.run(set_hook())
+    asyncio.run(hook_set())
 
 
 def start():
