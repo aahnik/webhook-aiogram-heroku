@@ -22,7 +22,7 @@ async def echo(message: types.Message):
 async def on_startup(dp):
     logging.warning(
         'Starting connection. ')
-    await bot.set_webhook(WEBHOOK_URL,skip_updates=True)
+    await bot.set_webhook(WEBHOOK_URL,drop_pending_updates=True)
 
 
 async def on_shutdown(dp):
