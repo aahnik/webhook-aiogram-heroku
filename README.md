@@ -56,5 +56,3 @@ To confirm your bot is working:
 
 - Send a message to your bot, and your bot will echo it back to you.
 
-
-[![promoted](https://raw.githubusercontent.com/aahnik/aahnik/master/promoted/general.gif)](https://aahnik.github.io/aahnik/promoted/general.html)
