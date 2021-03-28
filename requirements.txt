@@ -1,7 +1,7 @@
 ado-py==0.0.7
 aiodns==2.0.0
 aiogram==2.11.2
-aiohttp==3.7.3
+aiohttp==3.7.4
 async-timeout==3.0.1
 attrs==20.3.0
 autopep8==1.5.4
